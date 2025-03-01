@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Playlist Duration</title>
+  <style>
+    body {
+      width: 300px;
+      font-family: Arial, sans-serif;
+      padding: 15px;
+      background-color: #f9f9f9;
+    }
+    .container {
+      text-align: center;
+    }
+    .info-box {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 10px 0;
+    }
+    h1 {
+      font-size: 18px;
+      color: #cc0000;
+      margin-top: 0;
+    }
+    .duration {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+    .stats {
+      font-size: 14px;
+      color: #666;
+    }
+    .message {
+      font-style: italic;
+      margin-top: 10px;
+    }
+    button {
+      background-color: #cc0000;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      padding: 8px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #990000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>YouTube Playlist Duration Calculator</h1>
+    
+    <div class="info-box">
+      <div id="not-playlist" style="display: none;">
+        Not currently viewing a YouTube playlist. Please navigate to a playlist and try again.
+      </div>
+      
+      <div id="duration-container" style="display: none;">
+        <div class="duration" id="duration">Calculating...</div>
+        <div class="stats">
+          <div id="video-count">0 videos</div>
+          <div id="total-minutes">0 total minutes</div>
+        </div>
+      </div>
+      
+      <div id="loading" class="message">
+        Analyzing playlist...
+      </div>
+    </div>
+    
+    <button id="refresh-btn">Refresh Duration</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

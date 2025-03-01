@@ -1,0 +1,1 @@
+Creating icon files with placeholders - in a real scenario, you would need to create proper icon images.
