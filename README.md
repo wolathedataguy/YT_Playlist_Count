@@ -4,7 +4,7 @@ This Chrome extension calculates and displays the total duration of a YouTube pl
 
 ## Features
 
-- Automatically calculates the total duration of a YouTube playlist.
+- Calculates the total duration of a YouTube playlist.
 - Displays the total duration, number of videos, and average duration per video.
 - Updates dynamically as more videos are loaded in long playlists.
 - Blends seamlessly with the YouTube interface.
@@ -19,14 +19,17 @@ This Chrome extension calculates and displays the total duration of a YouTube pl
 ## Usage
 
 1. Navigate to any YouTube playlist page.
-2. The extension will automatically calculate and display the total duration of the playlist on the page.
+2. Click the extension icon in your browser toolbar to initialize the duration calculation.
+3. A widget will appear on the page showing the playlist duration and statistics.
+4. The widget can be dragged to a different position or closed if desired.
+5. If you refresh the page, you'll need to click the extension icon again to show the duration widget.
 
 ## Files
 
 - `content.js`: Contains the main logic for calculating and displaying the playlist duration.
 - `manifest.json`: The manifest file that defines the extension's properties and permissions.
-- `popup.html`: The HTML file for the extension's popup (if any).
-- `popup.js`: The JavaScript file for the extension's popup (if any).
+- `popup.html`: The HTML file for the extension's popup interface.
+- `popup.js`: The JavaScript file for handling extension popup functionality.
 - `icon-info.txt`: Information about the extension's icon.
 
 ## Contributing
@@ -36,4 +39,3 @@ Feel free to fork this repository and submit pull requests. For major changes, p
 ## License
 
 This project is licensed under the MIT License.
-# YT_Playlist_Count
