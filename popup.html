@@ -46,9 +46,28 @@
       font-size: 14px;
       cursor: pointer;
       margin-top: 10px;
+      transition: background-color 0.2s;
     }
     button:hover {
       background-color: #990000;
+    }
+    .error-message {
+      color: #cc0000;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .spinner {
+      border: 3px solid rgba(0, 0, 0, 0.1);
+      border-top: 3px solid #cc0000;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      animation: spin 1s linear infinite;
+      margin: 10px auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
   </style>
 </head>
@@ -70,7 +89,12 @@
       </div>
       
       <div id="loading" class="message">
+        <div class="spinner"></div>
         Analyzing playlist...
+      </div>
+      
+      <div id="error-container" class="error-message" style="display: none;">
+        Something went wrong. Please try reloading the page.
       </div>
     </div>
     

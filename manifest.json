@@ -2,9 +2,11 @@
   "manifest_version": 3,
   "name": "YouTube Playlist Duration Calculator",
   "version": "1.0",
-  "description": "Calculates the total duration of videos in a YouTube playlist",
+  "description": "Automatically displays the total duration of videos in a YouTube playlist directly on the page",
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_title": "YouTube Playlist Duration",
+    "default_icon": "icon.svg"
   },
   "content_scripts": [
     {
@@ -16,5 +18,10 @@
       "run_at": "document_idle"
     }
   ],
-  "permissions": ["activeTab", "tabs"]
+  "permissions": ["activeTab", "tabs"],
+  "icons": {
+    "16": "icon.svg",
+    "48": "icon.svg",
+    "128": "icon.svg"
+  }
 }
